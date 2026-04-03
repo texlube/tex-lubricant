@@ -1,4 +1,3 @@
-// tailwind.config.ts
 import type { Config } from "tailwindcss";
 
 const config: Config = {
@@ -8,10 +7,13 @@ const config: Config = {
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      // You can add your Texlube custom colors here later
+    },
   },
   plugins: [
-    require('@tailwindcss/typography'), 
+    require('@tailwindcss/typography'),
   ],
 };
+
 export default config;
